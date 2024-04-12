@@ -7,8 +7,7 @@
 1. Download Git [From here](https://git-scm.com/download/win)
 2. git clone "https://github.com/mohamedA122ouz/android_informant.git"
 3. git branch ANYCHOOSENNAME
-<span id="#4">
-4. git switch THECHOOSENNAME
+4. git switch THECHOOSENNAME <span id="#4">
 5. edit your files
 6. after editing make this commands
    - git add .
