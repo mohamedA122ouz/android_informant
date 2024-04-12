@@ -7,7 +7,7 @@
 1. Download Git [From here](https://git-scm.com/download/win)
 2. git clone "https://github.com/mohamedA122ouz/android_informant.git"
 3. git branch ANYCHOOSENNAME
-4. git switch THECHOOSENNAME <span id="#4">
+4. git switch THECHOOSENNAME <span id="#switch4">
 5. edit your files
 6. after editing make this commands
    - git add .
@@ -20,6 +20,6 @@
 10. after merge is approved go back to your local file
     - git switch main
     - git pull
-11. before you make any new changs you can now [start from step 4](#4)  
+11. before you make any new changs you can now [start from step 4](#switch4)  
 test
 hello this is omar adding some stuff to what in the project
