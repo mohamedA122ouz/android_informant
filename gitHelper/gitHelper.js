@@ -65,7 +65,7 @@ const git = {
     setRemoteOrigin: `git remote add origin ${settings.gitSettings.gitRepo}`,
     linkExistedProject: `git pull origin ${settings.gitSettings.mainBranch} --allow-unrelated-histories`,
     pull: "git pull",
-    renameCurrent:`git branch -M ${settings.gitSettings.mainBranch}`
+    renameCurrent: `git branch -M ${settings.gitSettings.mainBranch}`
 }
 if (!settings.gitSettings.initialized) {
     if (settings.gitSettings.AlreadyExistProject) {
@@ -91,6 +91,7 @@ if (!settings.gitSettings.initialized) {
                 if (e.toString().includes(`git config --global user.email "you@example.com"`)) {
                     console.log("Hold on While Authentication in process");
                     child.execSync(`git config --global user.name "${settings.gitSettings.username}"`);
+                    child.execSync(`git config --global user.email "${prompt("Enter your email address: ")}"`);
                     child.execSync(git.add, commandOptions);
                     child.execSync(git.commit(), commandOptions);
                 }
@@ -109,34 +110,36 @@ if (!settings.gitSettings.initialized) {
             // child.execSync(git.linkExistedProject, commandOptions);
         }
     } else {
-        let repoPath = currentPath(`../${repoFileName}`);
         //clone the repo
         try {
             child.execSync(git.clone, commandOptions);
         } catch (e) { console.log("error"); }
         let repoFileName = settings.gitSettings.gitRepo;
         repoFileName = repoFileName.slice(repoFileName.lastIndexOf("/") + 1, repoFileName.length - 4);
+        let repoPath = currentPath(`../${repoFileName}`);
         settings.gitSettings.initialized = true;
-        // let nodeCode = `
-        // const fs = require("fs");
-        // const child = require("child_process");
-        // setTimeout(()=>{
-        //     fs.cpSync("${currentPath()}","${repoPath}");
-        //     fs.rmdirSync("${currentPath()}");
-        //     child.execSync(node ${path.join(repoPath,"gitHelper/gitHelper.js")});
-        // },2000);
-        // `;
-        // fs.writeFile(path.join(repoPath,"run.js"),nodeCode);
-        // child.execSync(`node ${path.join(repoPath,"run.js")}`);
-
     }
-    let localCommand = {cwd:currentPath("../android_informant")}
+    let localCommand = { cwd: currentPath("../android_informant") }
     settings.gitSettings.localBranch = settings.gitSettings.username + "_";
-    child.execSync(git.renameCurrent,localCommand);
-    child.execSync(git.branch(settings.gitSettings.localBranch),localCommand);
-    child.execSync(git.switch(settings.gitSettings.localBranch),localCommand);
+    try {
+        child.execSync(git.renameCurrent, localCommand);
+        child.execSync(git.branch(settings.gitSettings.localBranch), localCommand);
+        child.execSync(git.add, localCommand);
+        child.execSync(git.commit(), localCommand);
+    } catch (e) {
+        if (e.toString().includes(`git config --global user.email "you@example.com"`)) {
+            console.log("Hold on While Authentication in process");
+            child.execSync(`git config --global user.name "${settings.gitSettings.username}"`);
+            child.execSync(`git config --global user.email "${prompt("Enter your email address: ")}"`);
+            child.execSync(git.add, commandOptions);
+            child.execSync(git.commit(), commandOptions);
+        }
+    }
+    child.execSync(git.switch(settings.gitSettings.localBranch), localCommand);
     writeSetting(settings.gitSettings);
-    prompt(`Please Close This window and copy currentFile ${currentPath()} into ${repoPath}`);
+    let repoFileName = settings.gitSettings.gitRepo;
+    repoFileName = repoFileName.slice(repoFileName.lastIndexOf("/") + 1, repoFileName.length - 4);
+    prompt(`Please Close This window and copy currentFile ${currentPath()} into ${currentPath(`../${repoFileName}`)}`);
 }
 else {
     function updateMain() {
