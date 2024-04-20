@@ -26,7 +26,8 @@
             android:layout_width="254dp"
             android:layout_height="254dp"
             android:layout_margin="15.5dp"
-            android:src="@drawable/verificathionIcon" />
+            android:src=""
+            tools:srcCompat="@drawable/verficcation" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -76,22 +77,27 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="24dp"
-            android:background="@drawable/edittext_backgrpund"
-            android:drawableStart="@drawfable/password"
+            android:backgroundTint="#994B4B4B"
+            android:background="@drawable/rounded"
             android:drawablePadding="16dp"
             android:ems="10"
-            android:hint="password"
+            android:hint="Enter OTP"
             android:inputType="textPassword"
             android:padding="16dp"
             android:textColor="#ffffff"
-            android:textColorHint="#ffffff" />
+            android:textColorHint="#ffffff"
+            android:drawableLeft="@drawable/unlock"
+            />
 
         <Button
             android:id="@+id/ButtonVerifying"
             android:layout_width="211dp"
             android:layout_height="72dp"
             android:layout_margin="15.5dp"
-            android:text="Continue " />
+            android:background="@drawable/rounded"
+            android:backgroundTint="#32ceff"
+            android:text="Continue"
+            android:textColor="@color/white"/>
 
 
 
