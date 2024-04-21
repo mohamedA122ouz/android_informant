@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Android_informant"
         tools:targetApi="31">
         <activity
-            android:name=".Camera"
+            android:name=".profileContainer"
             android:exported="false" />
         <activity
             android:name=".MainActivity2"
