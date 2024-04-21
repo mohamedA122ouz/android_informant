@@ -39,7 +39,7 @@
 
 
             <TextView
-                android:id="@+id/verificationText"
+                android:id="@+id/Title"
                 android:layout_width="377dp"
                 android:layout_height="wrap_content"
                 android:gravity="left"
@@ -48,7 +48,7 @@
                 android:textSize="42dp" />
 
             <TextView
-                android:id="@+id/OTPText"
+                android:id="@+id/subTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Enter OTP sent to mail ex*****@host.com"
@@ -56,20 +56,20 @@
                 android:textSize="13dp" />
         </LinearLayout>
 
-<!--        <EditText-->
-<!--            android:id="@+id/editTextText"-->
-<!--            android:layout_width="382dp"-->
-<!--            android:layout_height="66dp"-->
-<!--            android:layout_marginTop="15.5dp"-->
-<!--            android:background="#994F4F4F"-->
-<!--            android:ems="10"-->
-<!--            android:hint="Enter OTP"-->
-<!--            android:inputType="text"-->
-<!--            android:paddingLeft="25dp"-->
-<!--            android:textColor="@color/white"-->
-<!--            android:textColorHint="#D8A19C9C" >-->
+        <!--        <EditText-->
+        <!--            android:id="@+id/editTextText"-->
+        <!--            android:layout_width="382dp"-->
+        <!--            android:layout_height="66dp"-->
+        <!--            android:layout_marginTop="15.5dp"-->
+        <!--            android:background="#994F4F4F"-->
+        <!--            android:ems="10"-->
+        <!--            android:hint="Enter OTP"-->
+        <!--            android:inputType="text"-->
+        <!--            android:paddingLeft="25dp"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textColorHint="#D8A19C9C" >-->
 
-<!--        </EditText>-->
+        <!--        </EditText>-->
         <EditText
             android:id="@+id/editTextTextPassword"
             android:layout_width="match_parent"
@@ -101,27 +101,27 @@
 
 
 
-<!--    <shape xmlns:android="http://schemas.android.com/apk/res/android">-->
-<!--        <solid android:color="#FFFFFF"/>-->
-<!--        <stroke-->
-<!--            android:width="3dp"-->
-<!--            android:color="#0FECFF" />-->
-<!--        <gradient-->
-<!--            android:startColor="#ffffffff"-->
-<!--            android:endColor="#110000FF"-->
-<!--            android:angle="90"/>-->
+        <!--    <shape xmlns:android="http://schemas.android.com/apk/res/android">-->
+        <!--        <solid android:color="#FFFFFF"/>-->
+        <!--        <stroke-->
+        <!--            android:width="3dp"-->
+        <!--            android:color="#0FECFF" />-->
+        <!--        <gradient-->
+        <!--            android:startColor="#ffffffff"-->
+        <!--            android:endColor="#110000FF"-->
+        <!--            android:angle="90"/>-->
 
-<!--        <padding-->
-<!--            android:left="5dp"-->
-<!--            android:top="5dp"-->
-<!--            android:right="5dp"-->
-<!--            android:bottom="5dp"/>-->
-<!--        <corners-->
-<!--            android:bottomRightRadius="7dp"-->
-<!--            android:bottomLeftRadius="7dp"-->
-<!--            android:topLeftRadius="7dp"-->
-<!--            android:topRightRadius="7dp"/>-->
-<!--    </shape>-->
+        <!--        <padding-->
+        <!--            android:left="5dp"-->
+        <!--            android:top="5dp"-->
+        <!--            android:right="5dp"-->
+        <!--            android:bottom="5dp"/>-->
+        <!--        <corners-->
+        <!--            android:bottomRightRadius="7dp"-->
+        <!--            android:bottomLeftRadius="7dp"-->
+        <!--            android:topLeftRadius="7dp"-->
+        <!--            android:topRightRadius="7dp"/>-->
+        <!--    </shape>-->
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
