@@ -23,7 +23,7 @@
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:background="@drawable/circle"
-        android:padding="12dp"
+        android:padding="85dp"
         android:backgroundTint="#994B4B4B"
         app:srcCompat="@drawable/camera"
         tools:layout_editor_absoluteX="88dp"
