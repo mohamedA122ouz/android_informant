@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="#000000"
     tools:context=".signup">
+
     <LinearLayout
         android:id="@+id/mainLayout"
         android:layout_width="match_parent"
@@ -15,37 +16,44 @@
         android:orientation="vertical"
         android:paddingTop="20dp"
         android:showDividers="middle"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="-66dp">
-    <LinearLayout
-        android:layout_marginBottom="40dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="left"
-        android:orientation="vertical"
-        android:paddingLeft="0dp"
-        android:paddingRight="0dp">
-        <TextView
-            android:id="@+id/Title"
-            android:layout_width="377dp"
-            android:layout_height="wrap_content"
-            android:gravity="left"
-            android:text="Create Account"
-            android:textColor="@color/white"
-            android:textSize="42dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-37dp">
 
-        <TextView
-            android:id="@+id/subTitle"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Please enter required data"
-            android:textColor="#99FFFFFF"
-            android:textSize="13dp" />
-    </LinearLayout>
+            android:layout_marginBottom="40dp"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp">
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="388dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Create Account"
+                android:textColor="@color/white"
+                android:textSize="42dp" />
+
+            <TextView
+                android:id="@+id/subTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please enter required data"
+                android:textColor="#99FFFFFF"
+                android:textSize="13dp" />
+        </LinearLayout>
+
         <EditText
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/rounded"
             android:backgroundTint="#994B4B4B"
             android:drawableLeft="@drawable/person"
@@ -57,16 +65,16 @@
             android:textColor="#ffffff"
             android:textColorHint="#ffffff"
             tools:layout_editor_absoluteX="-97dp"
-            tools:layout_editor_absoluteY="194dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            />
+            tools:layout_editor_absoluteY="194dp" />
+
         <EditText
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/rounded"
             android:backgroundTint="#994B4B4B"
             android:drawableLeft="@drawable/password"
@@ -78,16 +86,16 @@
             android:textColor="#ffffff"
             android:textColorHint="#ffffff"
             tools:layout_editor_absoluteX="-97dp"
-            tools:layout_editor_absoluteY="194dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            />
+            tools:layout_editor_absoluteY="194dp" />
+
         <EditText
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/rounded"
             android:backgroundTint="#994B4B4B"
             android:drawableLeft="@drawable/email"
@@ -99,16 +107,16 @@
             android:textColor="#ffffff"
             android:textColorHint="#ffffff"
             tools:layout_editor_absoluteX="-97dp"
-            tools:layout_editor_absoluteY="194dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            />
+            tools:layout_editor_absoluteY="194dp" />
+
         <EditText
             android:id="@+id/cridetCard"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/rounded"
             android:backgroundTint="#994B4B4B"
             android:drawableLeft="@drawable/unlock"
@@ -120,23 +128,18 @@
             android:textColor="#ffffff"
             android:textColorHint="#ffffff"
             tools:layout_editor_absoluteX="-97dp"
-            tools:layout_editor_absoluteY="194dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            />
+            tools:layout_editor_absoluteY="194dp" />
 
         <Button
-        android:id="@+id/ButtonVerifying"
-        android:layout_width="211dp"
-        android:layout_height="72dp"
-        android:layout_margin="15.5dp"
-        android:background="@drawable/rounded"
-        android:backgroundTint="#32ceff"
-        android:text="sign up"
-        android:textColor="@color/white"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="421dp" />
+            android:id="@+id/ButtonVerifying"
+            android:layout_width="211dp"
+            android:layout_height="72dp"
+            android:layout_margin="15.5dp"
+            android:background="@drawable/rounded"
+            android:backgroundTint="#32ceff"
+            android:text="sign up"
+            android:textColor="@color/white"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="421dp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

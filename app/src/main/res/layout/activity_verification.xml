@@ -26,8 +26,7 @@
             android:layout_width="254dp"
             android:layout_height="254dp"
             android:layout_margin="15.5dp"
-            android:src=""
-            tools:srcCompat="@drawable/verficcation" />
+            tools:src="@drawable/verficcation" />
 
         <LinearLayout
             android:layout_width="wrap_content"
