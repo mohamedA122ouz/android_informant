@@ -63,7 +63,7 @@
             android:inputType="text"
             android:padding="16dp"
             android:textColor="#ffffff"
-            android:textColorHint="#ffffff"
+            android:textColorHint="#79FFFFFF"
             tools:layout_editor_absoluteX="-97dp"
             tools:layout_editor_absoluteY="194dp" />
 
@@ -84,7 +84,7 @@
             android:inputType="textPassword"
             android:padding="16dp"
             android:textColor="#ffffff"
-            android:textColorHint="#ffffff"
+            android:textColorHint="#79FFFFFF"
             tools:layout_editor_absoluteX="-97dp"
             tools:layout_editor_absoluteY="194dp" />
 
@@ -105,7 +105,7 @@
             android:inputType="text"
             android:padding="16dp"
             android:textColor="#ffffff"
-            android:textColorHint="#ffffff"
+            android:textColorHint="#79FFFFFF"
             tools:layout_editor_absoluteX="-97dp"
             tools:layout_editor_absoluteY="194dp" />
 
@@ -126,12 +126,12 @@
             android:inputType="text"
             android:padding="16dp"
             android:textColor="#ffffff"
-            android:textColorHint="#ffffff"
+            android:textColorHint="#79FFFFFF"
             tools:layout_editor_absoluteX="-97dp"
             tools:layout_editor_absoluteY="194dp" />
 
         <Button
-            android:id="@+id/ButtonVerifying"
+            android:id="@+id/signUp"
             android:layout_width="211dp"
             android:layout_height="72dp"
             android:layout_margin="15.5dp"

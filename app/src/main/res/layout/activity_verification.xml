@@ -26,7 +26,9 @@
             android:layout_width="254dp"
             android:layout_height="254dp"
             android:layout_margin="15.5dp"
-            tools:src="@drawable/verficcation" />
+            android:src="@drawable/verficcation"
+            android:contentDescription="@string/app_name"
+            />
 
         <LinearLayout
             android:layout_width="wrap_content"
